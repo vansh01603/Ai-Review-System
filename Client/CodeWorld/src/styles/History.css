@@ -1,0 +1,148 @@
+.history-page {
+    min-height: 100vh;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+.history-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.history-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00d97e;
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.85rem;
+}
+
+.loading, .empty-state {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 3rem;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.review-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.review-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.review-item-header:hover {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.review-item-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-language {
+    background: rgba(65, 0, 255, 0.15);
+    border: 1px solid rgba(65, 0, 255, 0.4);
+    color: #b69cff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.review-date {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;
+}
+
+.review-item-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review-score {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.expand-icon {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.8rem;
+}
+
+.review-item-body {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.review-detail h4 {
+    color: #00d97e;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.review-detail p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.review-detail pre {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.review-detail code {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    font-family: 'Courier New', monospace;
+}

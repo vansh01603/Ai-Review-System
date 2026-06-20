@@ -1,0 +1,199 @@
+.landing {
+    min-height: 100vh;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.landing-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.landing-brand {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #00d97e;
+    letter-spacing: 0.5px;
+}
+
+.landing-nav-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn-ghost {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    padding: 0.55rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    transition: color 0.2s, background 0.2s;
+}
+
+.nav-btn-ghost:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.nav-btn-solid {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.55rem 1.3rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #4100ff 0%, #00c97a 100%);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    transition: background-position 0.5s ease, transform 0.15s ease;
+}
+
+.nav-btn-solid:hover {
+    background-position: 100% 50%;
+    transform: translateY(-1px);
+}
+
+.hero {
+    text-align: center;
+    padding: 5rem 1.5rem 4rem;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: rgba(0, 217, 126, 0.1);
+    border: 1px solid rgba(0, 217, 126, 0.35);
+    color: #00d97e;
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 1.2rem;
+}
+
+.hero-highlight {
+    background: linear-gradient(135deg, #6f4bff 0%, #00d97e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtext {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 560px;
+    margin: 0 auto 2.2rem;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-btn-primary {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.85rem 1.8rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #4100ff 0%, #00c97a 100%);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    box-shadow: 0 4px 24px rgba(65, 0, 255, 0.4);
+    transition: background-position 0.5s ease, transform 0.15s ease;
+}
+
+.hero-btn-primary:hover {
+    background-position: 100% 50%;
+    transform: translateY(-1px);
+}
+
+.hero-btn-secondary {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    padding: 0.85rem 1.8rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.hero-btn-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    border-radius: 16px;
+    padding: 1.8rem;
+    text-align: left;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.feature-card:hover {
+    border-color: rgba(0, 217, 126, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.feature-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.feature-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.landing-footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.85rem;
+    padding: 2rem 0;
+    position: relative;
+    z-index: 2;
+}

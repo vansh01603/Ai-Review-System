@@ -1,0 +1,221 @@
+.home-page {
+    min-height: 100vh;
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+.home-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.home-loading {
+    text-align: center;
+    padding: 4rem 0;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.home-header {
+    margin-bottom: 2rem;
+}
+
+.home-header h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.home-header p {
+    color: rgba(255, 255, 255, 0.45);
+    margin-top: 0.3rem;
+}
+
+.empty-home {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
+.empty-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.empty-home h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.empty-home p {
+    color: rgba(255, 255, 255, 0.45);
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.6rem;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    background: linear-gradient(135deg, #4100ff 0%, #00c97a 100%);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    transition: background-position 0.5s ease, transform 0.15s ease;
+}
+
+.cta-btn:hover {
+    background-position: 100% 50%;
+    transform: translateY(-1px);
+}
+
+.cta-btn-secondary {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    padding: 0.75rem 1.6rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.05);
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.cta-btn-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-box {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.stat-box-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.stat-box-value-small {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.stat-box-label {
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.85rem;
+}
+
+.home-bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.trend-card, .lang-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.trend-card h3, .lang-card h3 {
+    font-size: 1rem;
+    color: #00d97e;
+    margin-bottom: 1.2rem;
+}
+
+.trend-bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.8rem;
+    height: 140px;
+}
+
+.trend-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    height: 100%;
+    gap: 0.4rem;
+}
+
+.trend-bar {
+    width: 100%;
+    border-radius: 6px 6px 0 0;
+    transition: height 0.3s ease;
+}
+
+.trend-bar-label {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.lang-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.lang-row {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.lang-name {
+    width: 90px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.lang-bar-track {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.lang-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #4100ff, #00c97a);
+    border-radius: 4px;
+}
+
+.lang-count {
+    width: 24px;
+    text-align: right;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.home-actions {
+    display: flex;
+    gap: 1rem;
+}
